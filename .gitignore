@@ -1,39 +1,92 @@
+# 编译输出
+/out/
+build/
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# 忽略 Maven、Gradle 依赖和构建目录
+.mvn/
+.mvn/wrapper/
+**/target/
+**/out/
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE 配置文件
+# IntelliJ IDEA
+.idea/
 *.iml
 *.ipr
-.idea
+*.iws
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Eclipse
+*.classpath
+*.project
+*.settings/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
+# 操作系统文件
 .DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 环境特定文件
+.env
+*.env
+.env.local
+.env.*.local
+
+# 临时文件
+*.tmp
+*.swp
+*.swo
+
+# JUnit 工作目录
+.testResults/
+
+# 静态分析工具
+/checkstyle/
+.findbugs/
+.pmd/
+.sonar/
+.jacoco/
+
+# 包含环境特定变量的文件
+*.properties
+*.key
+
+# 生成文件
+gen/
+
+# 数据库文件
+*.db
+*.sql
+*.sqlite
+
+# 其他
+*.bak
+*.old
+*.orig
+# Maven target directory
+target/
+
+# Maven-specific files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
